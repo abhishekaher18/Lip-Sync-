@@ -11,9 +11,13 @@ To run the Lip Sync project, ensure you have Python 3.6 or above installed. The 
 # Key Features:
 
 1.Load video and audio files, ensuring compatibility with various formats (MP4, WAV, etc.).
+
 2.Determine the durations of the video and audio for synchronization.
+
 3.Adjust video duration to match audio duration, either by looping the video or trimming it accordingly.
+
 4.Synchronize the lip movements with the audio to create a visually realistic and cohesive output.
+
 5.Save the final synchronized video with lip-synced audio for further analysis and presentation.
 
 # Note :
