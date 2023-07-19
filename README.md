@@ -12,12 +12,14 @@ To run the Lip Sync project, ensure you have Python 3.6 or above installed. Inst
 
 # Place your video file and audio file in the designated paths 
 ("path/to/video.mp4" and "path/to/audio.wav").
-# Load the video and audio files using the VideoFileClip and AudioFileClip functions.
+ Load the video and audio files using the VideoFileClip and AudioFileClip functions.
 # Get the durations of the video and audio using the duration attribute.
 video_duration = video.duration
 audio_duration = audio.duration
-# Adjust the video duration to match the audio duration. If the video is shorter, loop it; if longer, trim it accordingly.
+ Adjust the video duration to match the audio duration. If the video is shorter, loop it; if longer, trim it accordingly.
 # Synchronize the video and audio durations using the set_audio and set_duration functions.
+video = video.set_audio(audio.set_duration(video.duration))
+
 # Save the final synchronized video with lip-synced audio to the specified output path using write_videofile.
 
 # Sample Output
