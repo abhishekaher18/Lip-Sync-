@@ -6,25 +6,15 @@ Video - https://openinapp.co/5cwva
 Audio - https://openinapp.co/o9vuj
 
 # Installation
-To run the Lip Sync project, ensure you have Python 3.6 or above installed. Install the necessary libraries using pip install -r requirements.txt.
+To run the Lip Sync project, ensure you have Python 3.6 or above installed. The model utilizes the moviepy library in Python to manipulate video and audio files seamlessly.
 
-# Usage
+# Key Features:
 
-# Place your video file and audio file in the designated paths 
-("path/to/video.mp4" and "path/to/audio.wav").
- Load the video and audio files using the VideoFileClip and AudioFileClip functions.
-# Get the durations of the video and audio using the duration attribute.
-video_duration = video.duration
-audio_duration = audio.duration
- Adjust the video duration to match the audio duration. If the video is shorter, loop it; if longer, trim it accordingly.
-# Synchronize the video and audio durations using the set_audio and set_duration functions.
-video = video.set_audio(audio.set_duration(video.duration))
+Load video and audio files, ensuring compatibility with various formats (MP4, WAV, etc.).
+Determine the durations of the video and audio for synchronization.
+Adjust video duration to match audio duration, either by looping the video or trimming it accordingly.
+Synchronize the lip movements with the audio to create a visually realistic and cohesive output.
+Save the final synchronized video with lip-synced audio for further analysis and presentation.
 
-# Save the final synchronized video with lip-synced audio to the specified output path using write_videofile.
-
-# Sample Output
-You can find a sample output of the synchronized video with lip-synced audio in the "lipsync.mp4" folder.
-
-
-# Note
-Ensure that the paths for the video and audio files are correctly specified in the code before running the program. The project is designed to handle video and audio files with different durations and synchronize them accordingly. For more details on how to evaluate lip-sync accuracy and performance, please refer to the accompanying documentation in the repository.
+# Note :
+The project showcases how lip sync can be achieved programmatically, enabling applications in video editing, media production, and entertainment industries. The model's effectiveness can be assessed through visual inspection and further analysis of lip-sync accuracy. The complete code and instructions are available in the GitHub repository, along with sample inputs and outputs for demonstration.
